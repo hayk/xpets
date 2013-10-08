@@ -1,0 +1,4 @@
+RewriteEngine	On
+RewriteCond	%{HTTP_HOST}	^(www\.)?example\.com$
+RewriteCond	$1	!^(closed\.php)
+RewriteRule	^(.*)$	/closed.php	[L]
