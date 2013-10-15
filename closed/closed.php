@@ -1,5 +1,5 @@
 <?php
-$online = '22.01.2014 14:40 +04';
+$online = '22.01.2014 14:40 +0400';
 $online = strtotime($online);
 header('Content-Type: text/html; charset=utf-8');
 header('HTTP/1.1 503 Service Temporarily Unavailable');
