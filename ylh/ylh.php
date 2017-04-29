@@ -21,7 +21,7 @@ function get_ylhash($data=null, $long=false)
 
 	if (is_null($data))
 	{
-		$data = crypt( mt_rand().uniqid() );
+		$data = crypt( mt_rand().uniqid(), mt_rand().uniqid() );
 	}
 
 	$data = md5($data, true);
